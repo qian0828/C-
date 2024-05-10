@@ -24,7 +24,7 @@ void stuSql::init()
     qDebug()<<str;
 #endif
 //  str = "D:\\data.db";
-    m_db.setDatabaseName(str);
+    m_db.setDatabaseName(str);    //此代码为打包时data文件路径，如要用qt运行请将str改为下载的data.db的路径，并将#if 1改为#if 0;
     if(!m_db.open())
         qDebug()<<"db not open";
 }
